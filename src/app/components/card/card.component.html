@@ -1,0 +1,29 @@
+<div  class="list-card" >
+    <mat-card *ngFor="let i of items" class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{i.title}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="i.image" alt="Hình ảnh áo khoác">
+      <mat-card-content>
+        <p id="description">
+          {{i.description}}
+        </p>
+        <p>
+          Tình trạng: {{i.status}}
+        </p>
+          <p>
+            Giá: {{i.price}} đ
+          </p>
+          
+        
+      </mat-card-content>
+      <div class="button">
+      <mat-card-actions>
+        <button id="button-like" mat-button>LIKE</button>
+        <button id="add" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>add_shopping_cart</mat-icon>
+        </button>
+      </mat-card-actions>
+    </div>
+    </mat-card>
+  </div>
